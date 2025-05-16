@@ -20,7 +20,7 @@ jobs:
         run: echo "HAXEPATH=$HAXE_STD_PATH/.." >> $GITHUB_ENV
       - name: Install Haxe dependencies
         run: |
-          haxelib git hxcpp https://github.com/HaxeFoundation/hxcpp 617b05024cf501d4cf2acf17374b99c3237fd73e --quiet
+          haxelib git hxcpp https://github.com/beihu235/hxcpp --quiet
           haxelib install format --quiet
           haxelib install hxp
           haxelib install openfl --quiet
